@@ -1,2 +1,2 @@
-//gerenciamento das layers
+//Gerenciamento das layers
 layer_set_visible("Colisoes", false);

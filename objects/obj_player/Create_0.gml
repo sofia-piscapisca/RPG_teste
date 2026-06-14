@@ -9,7 +9,7 @@ walk_speed = 2;
 roll_speed = 3;
 roll_distance = 52
 
-
+//Sprites
 sprite_idle = spr_player;
 sprite_run = spr_player_run;
 sprite_roll = spr_player_roll

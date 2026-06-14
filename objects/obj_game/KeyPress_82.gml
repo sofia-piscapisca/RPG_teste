@@ -1,2 +1,2 @@
-//reiniciar o jogo
+//Reiniciar o jogo
 game_restart();

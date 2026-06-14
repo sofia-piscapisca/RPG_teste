@@ -1,11 +1,11 @@
 function player_state_free() { 
-    //movimentação
+    //Movimentação
     h_speed = lengthdir_x(input_magnitude * walk_speed, input_direction);
     v_speed = lengthdir_y(input_magnitude * walk_speed, input_direction);
     
     player_collision();
     
-    //atualizar sprite index
+    //Atualizar sprite index
     var _old_sprite = sprite_index;
     if (input_magnitude != 0) {
         direction = input_direction;
@@ -19,10 +19,10 @@ function player_state_free() {
         local_frame = 0;
     }
     
-    //atualizar image index
+    //Atualizar image index
     player_animate_sprite();
     
-    //mudar state
+    //Mudar state
     if (activate_key) {
         state = player_state_roll;
         move_remaining_distance = roll_distance

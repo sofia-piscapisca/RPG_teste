@@ -1,10 +1,10 @@
 function player_animate_sprite() {
-    //atualizar sprite
+    //Atualizar sprite
     var _total_frames = sprite_get_number(sprite_index) / 4;
     image_index = local_frame + (CARDINALDIRECTION * _total_frames);
     local_frame += sprite_get_speed(sprite_index) / FRAMERATE;
     
-    //loop da animação
+    //Loop da animação
     if (local_frame >= _total_frames) {
         animation_end = true;
         local_frame -= _total_frames;
