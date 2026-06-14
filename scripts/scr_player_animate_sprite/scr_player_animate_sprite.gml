@@ -1,8 +1,7 @@
 function player_animate_sprite() {
     //atualizar sprite
-    var _cardinal_direction = round(direction / 90);
     var _total_frames = sprite_get_number(sprite_index) / 4;
-    image_index = local_frame + (_cardinal_direction * _total_frames);
+    image_index = local_frame + (CARDINAL_DIRECTION * _total_frames);
     local_frame += sprite_get_speed(sprite_index) / FRAMERATE;
     
     //loop da animação

@@ -13,25 +13,4 @@ item_key = keyboard_check_pressed(vk_control);
 input_direction = point_direction(0, 0, right_key - left_key, down_key - up_key);
 input_magnitude = (right_key - left_key != 0) || (down_key - up_key != 0);
 
-//movimentação
-h_speed = lengthdir_x(input_magnitude * speed_walk, input_direction);
-v_speed = lengthdir_y(input_magnitude * speed_walk, input_direction);
-
-player_collision();
-
-//atualizar sprite index
-var _old_sprite = sprite_index;
-if (input_magnitude != 0) {
-    direction = input_direction;
-    sprite_index = sprite_run;
-}
-else {
-    sprite_index = sprite_idle;
-}
-
-if (_old_sprite != sprite_index) {
-    local_frame = 0;
-}
-
-//atualizar image index
-player_animate_sprite();
+script_execute(state);  

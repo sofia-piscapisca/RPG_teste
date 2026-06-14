@@ -1,4 +1,4 @@
-function player_collision(){
+function player_collision() {
     var _collision = false;
     
     //tiles horizontais
