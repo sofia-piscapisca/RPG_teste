@@ -1,4 +1,4 @@
-function scr_player_animate_sprite() {
+function player_animate_sprite() {
     //atualizar sprite
     var _cardinal_direction = round(direction / 90);
     var _total_frames = sprite_get_number(sprite_index) / 4;

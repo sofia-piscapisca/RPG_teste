@@ -17,8 +17,7 @@ input_magnitude = (right_key - left_key != 0) || (down_key - up_key != 0);
 h_speed = lengthdir_x(input_magnitude * speed_walk, input_direction);
 v_speed = lengthdir_y(input_magnitude * speed_walk, input_direction);
 
-x += h_speed;
-y += v_speed;
+player_collision();
 
 //atualizar sprite index
 var _old_sprite = sprite_index;
@@ -35,4 +34,4 @@ if (_old_sprite != sprite_index) {
 }
 
 //atualizar image index
-scr_player_animate_sprite();
+player_animate_sprite();

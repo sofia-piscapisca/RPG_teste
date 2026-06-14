@@ -1,2 +1,2 @@
 #macro FRAMERATE 60
- 
+#macro TILESIZE 16 
