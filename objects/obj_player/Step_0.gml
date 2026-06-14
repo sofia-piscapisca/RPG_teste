@@ -13,4 +13,6 @@ item_key = keyboard_check_pressed(vk_control);
 input_direction = point_direction(0, 0, right_key - left_key, down_key - up_key);
 input_magnitude = (right_key - left_key != 0) || (down_key - up_key != 0);
 
-script_execute(state);  
+if (!global.game_paused) {
+    script_execute(state); 
+} 
