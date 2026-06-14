@@ -1,0 +1,2 @@
+#macro FRAMERATE 60
+ 
