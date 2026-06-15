@@ -21,10 +21,33 @@ function player_state_free() {
     
     //Atualizar image index
     player_animate_sprite();
-    
+
+
+        
     //Mudar state
     if (activate_key) {
-        state = player_state_roll;
-        move_remaining_distance = roll_distance
+        var _activate_x = lengthdir_x(10, direction);
+        var _activate_y = lengthdir_y(10, direction);
+        activate = instance_position(x + _activate_x, y + _activate_y, obj_parent_entity);
+        
+        //Roll se não tiver nada para ativar
+        if (activate == noone || activate.entity_activate_script == -1) {
+            state = player_state_roll;
+            move_remaining_distance = roll_distance            
+        }
+        else {
+            //Ativar entidade
+            script_execute_ext(activate.entity_activate_script, activate.entity_activate_args);
+            
+            //Fazer o npc encarar o player
+            if (activate.entity_npc) {
+                with (activate) {
+                    direction = other.direction + 180;
+                    image_index = CARDINALDIRECTION;
+                }
+            }
+        }
+        
+        
     }
 }

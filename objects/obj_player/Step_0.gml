@@ -16,3 +16,5 @@ input_magnitude = (right_key - left_key != 0) || (down_key - up_key != 0);
 if (!global.game_paused) {
     script_execute(state); 
 } 
+
+depth = -bbox_bottom;
