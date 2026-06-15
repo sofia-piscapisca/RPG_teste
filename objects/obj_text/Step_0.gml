@@ -8,6 +8,17 @@ if (keyboard_check_pressed(vk_space)) {
     var _message_length = string_length(message);
     if (text_progress >= _message_length) {
         instance_destroy();
+        if (instance_exists(obj_text_queued)) {
+            with (obj_text_queued) {
+                ticket--;
+            }
+        }
+        else {
+            with (obj_player) {
+                state = last_state
+            }
+        }
+        
     }
     else {
         if (text_progress > 2) {
