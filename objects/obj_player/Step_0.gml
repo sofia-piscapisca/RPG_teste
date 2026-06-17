@@ -1,7 +1,7 @@
 //Inputs principais
-left_key = keyboard_check(vk_left) || keyboard_check(ord("A"))
-right_key = keyboard_check(vk_right) || keyboard_check(ord("D"))
-up_key = keyboard_check(vk_up) || keyboard_check(ord("W"))
+left_key = keyboard_check(vk_left) || keyboard_check(ord("A"));
+right_key = keyboard_check(vk_right) || keyboard_check(ord("D"));
+up_key = keyboard_check(vk_up) || keyboard_check(ord("W"));
 down_key = keyboard_check(vk_down) || keyboard_check(ord("S"));
 
 //Inputs ações diversas
