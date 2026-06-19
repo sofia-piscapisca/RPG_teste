@@ -1,5 +1,5 @@
-function dialogue_responses(_response) {
-    switch (_response) {
+function dialogue_responses() {
+    switch (argument0) {
         case 0: 
             break;
         

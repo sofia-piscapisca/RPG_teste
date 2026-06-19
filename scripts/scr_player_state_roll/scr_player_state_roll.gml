@@ -17,7 +17,8 @@ function player_state_roll() {
     }
     
     if (_collided) {
-        state = player_state_free;
+        state = player_state_bonk;
+        move_remaining_distance = bonk_distance;
         screenshake(4, 30);
     }
 }
