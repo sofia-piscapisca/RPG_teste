@@ -15,7 +15,7 @@ if (responses[0] != -1) && (text_progress >= string_length(message)) {
         }
         _print += responses[i];
         if (i == response_selected) {
-            _print += "< ";
+            _print += " <";
         }
     }
 }

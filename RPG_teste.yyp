@@ -39,6 +39,7 @@
     {"id":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
     {"id":{"name":"rm_parent","path":"rooms/rm_parent/rm_parent.yy",},},
     {"id":{"name":"rm_village","path":"rooms/rm_village/rm_village.yy",},},
+    {"id":{"name":"scr_dialogue_responses","path":"scripts/scr_dialogue_responses/scr_dialogue_responses.yy",},},
     {"id":{"name":"scr_MACROS","path":"scripts/scr_MACROS/scr_MACROS.yy",},},
     {"id":{"name":"scr_new_textbox","path":"scripts/scr_new_textbox/scr_new_textbox.yy",},},
     {"id":{"name":"scr_player_animate_sprite","path":"scripts/scr_player_animate_sprite/scr_player_animate_sprite.yy",},},

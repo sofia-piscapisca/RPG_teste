@@ -18,9 +18,17 @@ if (response_selected < _min) {
     response_selected = _max;
 }
 
+//Ao terminar a mensagem
 if (keyboard_check_pressed(vk_space)) {
     var _message_length = string_length(message);
     if (text_progress >= _message_length) {
+        
+        if (responses[0] != -1) {
+            with (origin_instance) {
+            	dialogue_responses(other.response_scripts[other.response_selected])
+            } 
+        }
+        
         instance_destroy();
         if (instance_exists(obj_text_queued)) {
             with (obj_text_queued) {
