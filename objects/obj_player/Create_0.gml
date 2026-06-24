@@ -1,4 +1,5 @@
 state = player_state_free;
+state_attack = attack_slash;
 last_state = state;
 
 collision_map = layer_tilemap_get_id(layer_get_id("Colisoes"));

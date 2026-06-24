@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_player_state_bonk",
+  "%Name":"scr_attacks",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_player_state_bonk",
+  "name":"scr_attacks",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
